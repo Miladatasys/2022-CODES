@@ -1,0 +1,63 @@
+#LIST
+a = ["banana", "apple", "Microsoft"]
+
+for element in a:
+    print(element)
+    
+
+#WITH THE SUM
+b     = [20, 10, 5]   
+total = 0
+for e in b:
+    total = total + e
+    print(total)
+    
+
+#RANGE FUNCTION
+#we're creating a new range and then putting in into the list function to convert it to a list 
+#c is a variable
+c = list(range(1, 5))
+print(c)
+
+#RANGE IN A FOR LOOP
+#this word i is something we chose, these are four numbers
+for i in range(1, 5):
+    print(i)
+
+#THE SUM OF RANGE IN A FOR LOOP, first we write the same for i...and then we add the new variable total2 because we want the sum of the numbers of the range
+total2 = 0 
+for i in range (1,5):
+    total2 = total2 + i
+print(total2)
+#   total2 = total2 + i this is a basic way but there is a shortcut
+    #says the new value of total2 should be the sum of old value of total2 plus i, and that way we'll be able to add 1 2 3 4 WANING: i don't know what is not working the shortcut
+
+print (list(range(1,8)))
+#what if we wanted to find the sum of only multiples of 3 and 6 so we want to add them up and find the number 9, it could be useful when the range is much larger
+#we want to be able to say if i is a multiplay of 3, so we want to check for each number and if that's true then add i to total 3 plus equals i and for that we need to learn:
+#Modulo operator: when we print the remainder
+print(4 % 3)
+print(5 % 3)
+print(1 % 3)
+print(6 % 3)
+
+#So wee need the sum of the multiples(3,6) on that range, and you can use the shortcut if you want 
+total3 = 0
+for i in range(1, 8):
+    if i % 3   == 0 :
+        total3 = total3 + i
+print(total3)
+
+#now, can you compute the sum of all multiples of 3,5 that are less than 100? USING RANGE, LIST.
+#what you want to do here is add up all the numbers, so you'll notice that there are some number that are both multiples of 3 and 5, so 
+print(list(range(1, 100)))
+
+for i in range(1,100):
+    if i % 3 == 0 or i % 5 == 0:
+        print(i)
+
+total4 =  0
+for i in range(1, 100):
+    if i % 3 == 0 or i % 5 == 0   :
+        total4 = total4 + i
+print(total4)

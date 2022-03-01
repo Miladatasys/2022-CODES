@@ -1,0 +1,59 @@
+#1
+# #IMPORT MODULES
+# TIME (we need a counter) Threading (as long we're counting we cannot access to ui) Tkinter is the graphical user interface library, additional tkinter alloqe us to use some more advanced widgets,
+
+import time
+import threading 
+import tkinter as tk
+from tkinter import font
+
+
+#2
+#For graphical user interfaces we use a Class, accesing to ui elements and functions we don't have to define one first, they can acces themselves using the object)
+#INIT AND THE SIZE, ETC
+
+class PomodoroTimer:
+    
+    def __init__(self):
+        self.root = tk.Tk()
+        self.root.geometry("600x300")
+        self.root.title("Temporizador Mila Data Pomodoro")
+        
+    #6
+        self.s.configure("TNotebook.Tab", font = ("Ubuntu", 16))
+        self.s.configure("TButton",       font = ("Ubuntu", 16))
+        
+#TABS 
+
+        self.tabs = tk.NoteBook(self.root)
+        self.tabs.pack(fill = "Both", pady = 10, expand = True)
+#3
+#MAIN LOOP
+
+        self.root.mainloop()
+        
+ #5
+ #INSTANCE OF THE TIMER, (were all the logic happens)     
+ #UI, SEPARATE FUNTIONS FOR FUNCTIONALITIES
+
+    def start_timer_thread(self):
+        pass
+    
+    def start_timer(self):
+        pass
+    
+    def start_timer(self):
+        pass
+    
+    def reset_clock(self):
+        pass
+    
+    def skip_clock(self):
+        pass
+     
+ 
+#4
+PomodoroTimer()
+
+
+    
